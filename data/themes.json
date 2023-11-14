@@ -1,0 +1,15 @@
+[
+  {
+    "themebackground": "/res/Backgrounds/bg_green.jpg",
+    "gridcolor": "black"
+    
+  },
+  {
+    "themebackground": "/res/Backgrounds/mountain_long_road_generated.jpg",
+    "gridcolor": "black"
+  },
+  {
+    "themebackground": "/res/Backgrounds/bg_02.png",
+    "gridcolor": "black"
+  }
+]
