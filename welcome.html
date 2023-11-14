@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC - TAC - TOE</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Poppins&family=Special+Elite&display=swap');
+        body{
+            background-repeat: no-repeat;
+            opacity: 0.1;
+            transition: 1s;
+            
+        }
+        #logo{
+            width: 400px;
+            height: 400px;
+            visibility:hidden;
+            transition: 3s;
+            opacity: 0.1;
+            /* margin: auto; */
+            /* align-items: center;
+            justify-content: center; */
+
+        }
+        #logo-container{
+            max-width: 500px;
+            height: 600px;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;   
+
+
+        }
+        #button-menu{
+            display: inline-flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 200px;
+            /* justify-content: center;
+            align-items: center;
+            text-align: center; */
+        }
+        .button{
+            transition: 1s;
+            height: 40px;
+            display: inline-block;
+            padding: 1em;
+            margin: auto;
+            margin-top: 15px;
+            box-sizing: border-box;
+            font-weight: bold;
+            color: tomato;
+            letter-spacing :3px;
+            border-radius:20px;
+            border: none;
+            text-transform: uppercase;
+            background-color: gainsboro;
+            font-family: 'Poppins', sans-serif;
+            width: 200px;
+            opacity: 0.8;
+
+        }
+        .button:hover{
+            background-color: tomato ;
+            color: white;
+            opacity: 1;
+            
+        }
+
+
+    </style>
+<body>
+
+    <div id="logo-container">
+        <img id='logo' src="/res/img/logo_copy.png" alt="">
+        <div id="button-menu">
+            <button class="button" id="btn_play">Play</button>
+            <button class="button" id="btn_settings">Settings</button>
+            <button class="button" id="btn_aboutdevloper">About Devloper</button>
+
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    
+    document.body.style.backgroundImage = "url('/res/Anim/X.gif')"
+    function CorrectOpacity(){
+        document.body.style.opacity = 0.9
+
+
+    }
+    setTimeout(200,CorrectOpacity)
+    function NextScreen(page){
+        if(page == 'game'){
+            window.location.href = '/game.html'
+        }
+        else if(page == 'welcome'){
+            window.location.href = '/welcome.html'
+        }
+        else if(page == 'about'){
+            window.location.href = '/about.html'
+            
+        }
+        else{
+            alert('no page found')
+
+        }
+        
+
+
+    }
+    
+    function LoadBackground(){
+        document.body.style.backgroundImage = "url('/res/img/welcomebg.png')";
+        document.body.style.opacity = 0.8
+        document.getElementById('logo').style.visibility='visible'
+        document.getElementById('logo').style.opacity=1
+        
+        
+
+        
+    }
+
+    play = document.getElementById('btn_play')
+    play.onclick = function (){
+        NextScreen('game')
+        
+    }
+    aboutdevloper = document.getElementById('btn_aboutdevloper')
+    aboutdevloper.onclick = function (){
+        NextScreen('about')
+        
+    }
+    setTimeout(LoadBackground,1000)
+
+    
+    
+
+</script>
+</html>

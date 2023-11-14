@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-position:top;
+            background-repeat: no-repeat;
+        }
+        #bottombar button{
+            margin-bottom: 20%;
+        }
+        #game-options{
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            height: 18%;
+                      
+            
+        }
+        #game-box{
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+    </style>
+    <script defer src="js/game.js"></script>
+
+</head>
+<body>
+
+    <h2 class="heading">Tic-Tac-Toe</h2>
+    
+    <div id="game-box">
+       
+        
+
+        <div class="rect" id="grid">
+       
+            <div class="fstrow toall" id="gridtile1" ></div>
+
+            <div class="midrow toall" id="gridtile2"></div>
+
+            <div class="thrdrow toall" id="gridtile3"></div>
+
+            <div class="fstrow toall" id="gridtile4"></div>
+
+            <div class="midrow toall" id="gridtile5"></div>
+
+            <div class="thrdrow toall" id="gridtile6"></div>
+
+            <div class="fstrow toall" id="gridtile7"></div>
+
+            <div class="midrow toall" id="gridtile8"></div>
+
+            <div class="thrdrow toall" id="gridtile9"></div>
+                
+        </div>
+        
+        <!-- <div id="bottombar">
+            <button class="button" id="reset">Reset</button>  
+        </div>  -->
+        <div id="bottombar">
+            <button class="button" id="reset">Play Again</button>
+        </div>
+    </div>
+    
+    
+
+
+    
+
+
+</body>
+
+</html>
